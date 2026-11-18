@@ -1019,7 +1019,7 @@ func TestSCERulesExcludedFromMatrix(t *testing.T) {
 func TestParseWolfiBaseRef(t *testing.T) {
 	t.Parallel()
 
-	const pinned = wolfiBaseRepo + ":latest@sha256:8509ee4351a2e501b7f98201f2e2642396e82020c61a589cacdcfe74b9de46c1"
+	const pinned = wolfiBaseRepo + ":latest@sha256:e9b8c3739e5fb5fc778843a2ce74f8620588c9ddc9c44918cead527abcb0b628"
 
 	realDockerfile, err := os.ReadFile(filepath.Clean(filepath.Join("..", "..", "..", "e2e", "fixtures", "baseline-clean", "Dockerfile")))
 	if err != nil {
